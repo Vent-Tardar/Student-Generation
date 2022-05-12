@@ -17,12 +17,12 @@ If everything is correct, you can run the program pre-specifying the number of l
 ### Running a jar file
 
 To run the program, follow these steps:
-1. To run the program, you need a jar file: *generation-of-students-1.0-jar-with-dependencies.jar*
-2. After opening the console, you need to write the command: **java -jar generation-of-students-1.0-jar-with-dependencies.jar** ***[number]***
+1. To run the program, you need a jar file: *studentGeneration-1.0-jar-with-dependencies.jar*
+2. After opening the console, you need to write the command: **java -jar studentGeneration-1.0-jar-with-dependencies.jar** ***[number]***
 
 ***[number]*** is a number symbolizing the number of generated lines in files.
 
-For example, *java -jar generation-of-students-1.0-jar-with-dependencies.jar* ***100***
+For example, *java -jar studentGeneration-1.0-jar-with-dependencies.jar* ***100***
 
 ***<---!!!--->***
 
