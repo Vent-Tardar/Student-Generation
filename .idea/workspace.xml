@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e291b1bb-88f2-415c-b8ba-a1d3568b503f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/genusll/generated/DateOfBirth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/genusll/searching/groups/SearchingGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/genusll/searching/students/SearchingStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/genusll/workWithCsv/CreateCSV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/genusll/workWithCsv/FileNameFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/genusll/workWithCsv/ReadCSV.java" afterDir="false" />
+    <list default="true" id="e291b1bb-88f2-415c-b8ba-a1d3568b503f" name="Changes" comment="Creating classes that are responsible for generating students">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/genusll/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/genusll/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +44,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1652367551525</updated>
-      <workItem from="1652367553966" duration="741000" />
+      <workItem from="1652367553966" duration="2270000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1652367793324</created>
@@ -62,7 +53,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652367793324</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Creating classes that are responsible for generating students">
+      <created>1652368577377</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652368577377</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -82,6 +80,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Start" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start" />
+    <MESSAGE value="Creating classes that are responsible for generating students" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating classes that are responsible for generating students" />
   </component>
 </project>
