@@ -14,7 +14,7 @@ import java.util.Objects;
 public class ReadCSV {
     public static List<String> readCSV(String nameFile) {
         /*The beginning of the fragment to comment out if you need to run the program through the IDE*/
-        String path = ReadCSV.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+        /*String path = ReadCSV.class.getProtectionDomain().getCodeSource().getLocation().getPath();
         String pathTemp = path.substring(0, path.lastIndexOf("/") + 1);
         String decodedPath = URLDecoder.decode(pathTemp, StandardCharsets.UTF_8);
         String ext = ".csv";
@@ -35,11 +35,11 @@ public class ReadCSV {
                 }
             }
         }
-        return null;
+        return null;*/
         /*The end of the fragment to comment out if you need to run the program through the IDE*/
 
         /*The beginning of the fragment to uncomment if you need to run the program through the IDE*/
-        /*try (Reader reader = new BufferedReader(new InputStreamReader
+        try (Reader reader = new BufferedReader(new InputStreamReader
                 (Objects.requireNonNull(ReadCSV.class.getResourceAsStream("/sample_"+nameFile + ".csv"))));
              CSVParser csvParser = new CSVParser(reader, CSVFormat.EXCEL)) {
             List<String> record = new ArrayList<>();
@@ -51,7 +51,7 @@ public class ReadCSV {
             return record;
         } catch (IOException e) {
             throw new RuntimeException(e);
-        }*/
+        }
         /*The end of the fragment to uncomment if you need to run the program through the IDE*/
     }
 
