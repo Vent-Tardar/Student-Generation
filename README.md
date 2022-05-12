@@ -2,12 +2,12 @@
 ## Launching the program
 
 To run the program, follow these steps:
-1. To run the program, you need a jar file: *generation-of-students-1.0-jar-with-dependencies.jar*
-2. After opening the console, you need to write the command: **java - jar generation-of-students-1.0-jar-with-dependencies.jar** ***[number]***
+1. To run the program, you need a jar file: *studentGeneration-1.0-jar-with-dependencies.jar*
+2. After opening the console, you need to write the command: **java -jar studentGeneration-1.0-jar-with-dependencies.jar** ***[number]***
 
 ***[number]*** is a number symbolizing the number of generated lines in files.
 
-For example, *java - jar generation-of-students-1.0-jar-with-dependencies.jar* ***100***
+For example, *java -jar studentGeneration-1.0-jar-with-dependencies.jar* ***100***
 
 ***Important:*** 
 - If the path in the command line differs from the path to the jar file, then before starting the program, 
