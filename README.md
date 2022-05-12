@@ -9,7 +9,7 @@ The program presents two ways to run the program:
 
 For the program to work correctly in the IDE, you need to check that the ReadCSV file has been uncommented 
 the correct code fragment. It is marked with comments. And also there were test files in CSV format in the 
-resource folder. The files should have the following names: **sample_*<part>*.csv**. ***part*** - should denote what the file contains. 
+resource folder. The files should have the following names: **sample_*****[part]*****.csv**. ***part*** - should denote what the file contains. 
 For example, **sample_lastname.csv** - contains students' lastnames.
 
 If everything is correct, you can run the program pre-specifying the number of lines to be generated.
