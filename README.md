@@ -33,5 +33,5 @@ Errors can occur if:
 In case of errors, a message will be displayed explaining why the generation was interrupted.
 
 # Note:
-If you want to run the program through the IDE, then you need to uncomment the specified code fragment in the ReadCSV file. And put your test csv files in the resource folder.
+If you want to run the program through the IDE, you need to comment out the specified code fragment in the ReadCSV file. Also put your test csv files in the resource folder. The files should have the following names: **sample_*<part>*.csv**. ***part*** - should denote what the file contains. For example, **sample_lastname.csv** - contains students' last names.
 
