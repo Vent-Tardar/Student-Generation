@@ -11,7 +11,7 @@ public class DateOfBirth {
         int dayOfYear = randBetween(1, gc.getActualMaximum(Calendar.DAY_OF_YEAR));
         gc.set(Calendar.DAY_OF_YEAR, dayOfYear);
         String mm_dd = checkMonthAndDay(gc.get(Calendar.MONTH) + 1, gc.get(Calendar.DAY_OF_MONTH));
-        return gc.get(Calendar.YEAR) + "." + mm_dd;
+        return gc.get(Calendar.YEAR) + "-" + mm_dd;
     }
     private static int randBetween(int start, int end) {
         return start + (int)Math.round(Math.random() * (end - start));
@@ -23,6 +23,9 @@ public class DateOfBirth {
         else month = String.valueOf(monthTemp);
         if (dayTemp < 10) day = "0"+dayTemp;
         else day = String.valueOf(dayTemp);
-        return month + "." + day;
+        return month + "-" + day;
     }
 }
+
+
+
