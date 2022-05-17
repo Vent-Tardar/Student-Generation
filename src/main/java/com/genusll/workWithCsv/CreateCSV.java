@@ -40,7 +40,7 @@ public class CreateCSV {
                 arr[i] = i+1;
             }
 
-            SearchingStudent searchingStudent = new SearchingStudent();
+            SearchingStudent searchingStudent = new SearchingStudent("firstname", "midname", "lastname");
             SearchingGroup searchingGroup = new SearchingGroup();
 
             DateOfBirth dateOfBirth = new DateOfBirth();
