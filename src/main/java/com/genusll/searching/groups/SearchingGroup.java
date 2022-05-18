@@ -2,47 +2,35 @@ package com.genusll.searching.groups;
 
 import com.genusll.workWithCsv.ReadCSV;
 
+import java.io.PrintStream;
 import java.net.URISyntaxException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
+import java.nio.charset.StandardCharsets;
+import java.util.*;
 
 public class SearchingGroup {
-    private static List<String> listOfGroup = new ArrayList<>();
+
+    private Map<Integer, List<String>> map = new HashMap<>();
+
+    public SearchingGroup(String groups) {
+        this.map = generatedMap(this.map, Objects.requireNonNull(ReadCSV.readCSV(groups)));
+    }
+
     public List<String> searchingForDataFromGroup() throws URISyntaxException {
-        if (listOfGroup.size() == 0){
-            listOfGroup = ReadCSV.readCSV("groups");
-        }
+        return map.get(1 + (int) (Math.random()* map.size()));
+    }
+
+    private Map<Integer, List<String>> generatedMap(Map<Integer, List<String>> map, List<String> list){
         List<String> temp = new ArrayList<>();
-        for (int i = 0; i < listOfGroup.size()-7; i=i+7) {
-            temp.add(
-                    listOfGroup.get(i)+", "+listOfGroup.get(i+1)
-                    +", "+listOfGroup.get(i+2)+", "+listOfGroup.get(i+3)
-                    +", "+listOfGroup.get(i+4)+", "+listOfGroup.get(i+5)
-                    +", "+listOfGroup.get(i+6)
-            );
+        int number = 1;
+        for (String s: list) {
+            if (temp.size() == 6){
+                map.put(number, new ArrayList<>(temp));
+                temp.clear();
+                number++;
+            } else {
+                temp.add(s);
+            }
         }
-
-        Random random = new Random();
-        String[] tmp = temp.get(1 + random.nextInt(temp.size() - 1)).split(",(?!\\s\\p{Ll}) ");
-
-        List<String> list = Arrays.asList(tmp);
-        List<String> record = new ArrayList<>(list);
-
-        String[] temp1;
-        if (record.size() < 5){
-            temp1 = record.get(record.size()-1).split(", ");
-            record.set(record.size()-1, temp1[0]);
-            record.add(temp1[1]);
-        }
-
-        if (record.size() < 6){
-            temp1 = record.get(record.size()-1).split(", ");
-            record.set(record.size()-1, temp1[0]);
-            record.add(temp1[1]);
-        }
-
-        return record;
+        return map;
     }
 }

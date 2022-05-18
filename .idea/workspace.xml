@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e291b1bb-88f2-415c-b8ba-a1d3568b503f" name="Changes" comment="Correcting the date format">
-      <change afterPath="$PROJECT_DIR$/generated_students.csv" afterDir="false" />
+    <list default="true" id="e291b1bb-88f2-415c-b8ba-a1d3568b503f" name="Changes" comment="Updating student processing classes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/genusll/searching/groups/SearchingGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/genusll/searching/groups/SearchingGroup.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/genusll/searching/students/SearchingStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/genusll/searching/students/SearchingStudent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/genusll/workWithCsv/CreateCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/genusll/workWithCsv/CreateCSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/genusll/workWithCsv/FileNameFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/genusll/workWithCsv/ReadCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/genusll/workWithCsv/ReadCSV.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +47,7 @@
     <configuration name="com.genusll.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.genusll.Main" />
       <module name="studentGeneration" />
-      <option name="PROGRAM_PARAMETERS" value="15" />
+      <option name="PROGRAM_PARAMETERS" value="100000" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.genusll.*" />
@@ -74,7 +76,10 @@
       <workItem from="1652372337469" duration="7486000" />
       <workItem from="1652625973493" duration="1453000" />
       <workItem from="1652717192699" duration="5818000" />
-      <workItem from="1652766503654" duration="1193000" />
+      <workItem from="1652766503654" duration="16908000" />
+      <workItem from="1652795085164" duration="2805000" />
+      <workItem from="1652798542719" duration="8845000" />
+      <workItem from="1652851087268" duration="1355000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1652367793324</created>
@@ -146,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652718336604</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Updating student processing classes">
+      <created>1652767996100</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1652767996100</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,6 +185,7 @@
     <MESSAGE value="Update README.md" />
     <MESSAGE value="Update file" />
     <MESSAGE value="Correcting the date format" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correcting the date format" />
+    <MESSAGE value="Updating student processing classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating student processing classes" />
   </component>
 </project>

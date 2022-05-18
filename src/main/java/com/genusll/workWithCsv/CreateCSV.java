@@ -41,7 +41,7 @@ public class CreateCSV {
             }
 
             SearchingStudent searchingStudent = new SearchingStudent("firstname", "midname", "lastname");
-            SearchingGroup searchingGroup = new SearchingGroup();
+            SearchingGroup searchingGroup = new SearchingGroup("groups");
 
             DateOfBirth dateOfBirth = new DateOfBirth();
 
