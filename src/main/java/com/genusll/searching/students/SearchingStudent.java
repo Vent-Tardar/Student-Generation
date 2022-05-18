@@ -42,6 +42,6 @@ public class SearchingStudent {
 
     private String pullsOutARandomString(Map<String, List<String>> map, String gender){
         List<String> list = map.get(gender);
-        return list.get(1 + new Random().nextInt(list.size() - 1));
+        return list.get(new Random().nextInt(list.size()));
     }
 }
