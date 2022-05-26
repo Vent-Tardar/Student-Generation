@@ -1,13 +1,14 @@
 package com.genusll.workWithCsv;
 
 import com.genusll.generated.DateOfBirth;
-import com.genusll.searching.groups.SearchingGroup;
-import com.genusll.searching.students.SearchingStudent;
+import com.genusll.searching.groups.SearchGroup;
+import com.genusll.searching.students.SearchStudent;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
 
 import java.io.*;
 import java.net.URISyntaxException;
+import java.time.LocalDate;
 import java.util.*;
 
 public class CreateCSV {
@@ -40,24 +41,24 @@ public class CreateCSV {
                 arr[i] = i+1;
             }
 
-            SearchingStudent searchingStudent = new SearchingStudent("firstname", "midname", "lastname");
-            SearchingGroup searchingGroup = new SearchingGroup("groups");
+            SearchStudent searchStudent = new SearchStudent("firstname", "midname", "lastname");
+            SearchGroup searchGroup = new SearchGroup("groups");
 
             DateOfBirth dateOfBirth = new DateOfBirth();
 
             for (int i = 0; i < number; i++) {
                 // Person
                 int orgPersonId = arr[i];
-                String[] fio = searchingStudent.searchingForDataFromStudentMap();
-                String date = dateOfBirth.generatedDateOfBirth();
+                String[] fio = searchStudent.searchingForDataFromStudentMap();
+                LocalDate date = dateOfBirth.generatedDateOfBirth();
                 // Study
-                List<String> group = searchingGroup.searchingForDataFromGroup();
+                List<String> group = searchGroup.searchingForDataFromGroup();
 
                 list.add(String.valueOf(orgPersonId));
                 list.add(fio[0]);
                 list.add(fio[1]);
                 list.add(fio[2]);
-                list.add(date);
+                list.add(String.valueOf(date));
                 list.add(fio[3]);
                 list.add(group.get(0));
                 list.add(group.get(1));

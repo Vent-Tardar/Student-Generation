@@ -2,16 +2,14 @@ package com.genusll.searching.groups;
 
 import com.genusll.workWithCsv.ReadCSV;
 
-import java.io.PrintStream;
 import java.net.URISyntaxException;
-import java.nio.charset.StandardCharsets;
 import java.util.*;
 
-public class SearchingGroup {
+public class SearchGroup {
 
     private Map<Integer, List<String>> map = new HashMap<>();
 
-    public SearchingGroup(String groups) {
+    public SearchGroup(String groups) {
         this.map = generatedMap(this.map, Objects.requireNonNull(ReadCSV.readCSV(groups)));
     }
 

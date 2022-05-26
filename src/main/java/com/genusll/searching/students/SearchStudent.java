@@ -4,25 +4,25 @@ import com.genusll.workWithCsv.ReadCSV;
 
 import java.util.*;
 
-public class SearchingStudent {
+public class SearchStudent {
 
-    private Map<String, List<String>> name = new HashMap<>();
-    private Map<String, List<String>> midname = new HashMap<>();
-    private Map<String, List<String>> lastname = new HashMap<>();
+    private Map<String, List<String>> nameMap = new HashMap<>();
+    private Map<String, List<String>> midnameMap = new HashMap<>();
+    private Map<String, List<String>> lastnameMap = new HashMap<>();
 
-    public SearchingStudent(String name, String midname, String lastname) {
-        this.name = generatedMap(this.name, Objects.requireNonNull(ReadCSV.readCSV(name)));
-        this.midname = generatedMap(this.midname, Objects.requireNonNull(ReadCSV.readCSV(midname)));
-        this.lastname = generatedMap(this.lastname, Objects.requireNonNull(ReadCSV.readCSV(lastname)));;
+    public SearchStudent(String name, String midname, String lastname) {
+        this.nameMap = generatedMap(this.nameMap, ReadCSV.readCSV(name));
+        this.midnameMap = generatedMap(this.midnameMap, ReadCSV.readCSV(midname));
+        this.lastnameMap = generatedMap(this.lastnameMap, ReadCSV.readCSV(lastname));
     }
 
     public String[] searchingForDataFromStudentMap() {
         Random random = new Random();
-        String gender = (String) name.keySet().toArray()[random.nextInt(name.size())];
+        String gender = (String) nameMap.keySet().toArray()[random.nextInt(nameMap.size())];
 
         return new String[]{
-                pullsOutARandomString(lastname, gender), pullsOutARandomString(name, gender),
-                pullsOutARandomString(midname, gender), gender
+                pullsOutARandomString(lastnameMap, gender), pullsOutARandomString(nameMap, gender),
+                pullsOutARandomString(midnameMap, gender), gender
         };
     }
 
